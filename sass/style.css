@@ -1,121 +1,240 @@
-body {
-  background-color: #f5f7fb;
-  font-family: Arial, sans-serif;
-  color: #333;
-  margin: 0;
+/* =========================================
+   SMARTBUDGET - ESTILOS PRINCIPALES
+   ========================================= */
+
+/* ---------- CONFIGURACIÓN GENERAL ---------- */
+
+* {
+    box-sizing: border-box;
 }
 
-/* HEADER alineado a la izquierda */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #212529;
+    background-color: #f8f9fa;
+    line-height: 1.6;
+}
+
+
+/* ---------- ENCABEZADO ---------- */
+
 .header {
-  padding: 30px 0 10px;
-  width: 100%;
+    background: linear-gradient(135deg, #0d6efd, #0b5ed7);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
 }
 
 .header__titulo {
-  font-size: 3rem;
-  margin-bottom: 10px;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 700;
 }
 
 .header__texto {
-  font-size: 1.1rem;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
+    margin: 10px 0 0;
+    font-size: 1.2rem;
 }
 
-/* MENÚ a la izquierda */
+
+/* ---------- MENÚ DE NAVEGACIÓN ---------- */
+
 .nav {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 10px 0 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding: 18px 20px;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .nav__link {
-  text-decoration: none;
-  color: #007bff;
-  margin-right: 15px;
-  font-weight: bold;
+    color: #212529;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
 .nav__link:hover {
-  text-decoration: underline;
+    color: #0d6efd;
+    text-decoration: none;
 }
 
-/* Contenedor principal */
-main.container {
-  max-width: 900px;
-}
 
-/* INICIO alineado a la izquierda */
+/* ---------- SECCIÓN INICIO ---------- */
+
 .inicio {
-  margin-bottom: 60px;
+    text-align: center;
+    padding: 40px 20px;
 }
 
 .inicio__titulo {
-  font-size: 2.2rem;
-  margin-bottom: 15px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #212529;
+    margin-bottom: 15px;
 }
 
 .inicio__texto {
-  margin-bottom: 25px;
-  font-size: 1.05rem;
+    font-size: 1.2rem;
+    color: #6c757d;
+    margin-bottom: 25px;
 }
+
+
+/* ---------- BOTÓN COMENZAR ---------- */
+
+.inicio .btn {
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.inicio .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(13, 110, 253, 0.3);
+}
+
+
+/* ---------- IMAGEN ---------- */
 
 .inicio__imagen {
-  max-width: 420px;
-  width: 100%;
-  display: block;
-  margin-top: 20px;
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    margin: 20px auto 0;
 }
 
-/* BOTÓN */
-.btn {
-  border-radius: 25px;
-  padding: 10px 25px;
-  font-weight: bold;
-}
 
-/* BENEFICIOS */
+/* ---------- BENEFICIOS ---------- */
+
 .beneficios {
-  margin-bottom: 60px;
+    padding: 50px 20px;
 }
 
 .beneficios__titulo {
-  font-size: 2rem;
-  margin-bottom: 35px;
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: #212529;
+    margin-bottom: 40px !important;
 }
 
-/* TARJETAS */
+
+/* ---------- TARJETAS DE BENEFICIOS ---------- */
+
 .beneficio {
-  padding-right: 20px;
+    height: 100%;
+    padding: 30px 25px;
+    background-color: white;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.beneficio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
 .beneficio__titulo {
-  font-size: 1.25rem;
-  margin-bottom: 10px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #0d6efd;
+    margin-bottom: 12px;
 }
 
 .beneficio__texto {
-  line-height: 1.5;
+    color: #6c757d;
+    margin-bottom: 0;
 }
 
-/* CONTACTO centrado */
+
+/* ---------- CONTACTO ---------- */
+
 .contacto {
-  text-align: center;
-  margin-bottom: 60px;
+    padding: 60px 20px;
+    background-color: white;
+    border-radius: 12px;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
 }
 
 .contacto__titulo {
-  font-size: 2rem;
-  margin-bottom: 25px;
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: #212529;
 }
 
-/* FOOTER */
+.contacto__dato {
+    font-size: 1.1rem;
+    color: #495057;
+    margin-bottom: 10px;
+}
+
+
+/* ---------- FOOTER ---------- */
+
 .footer {
-  text-align: center;
-  padding: 25px 0;
-  color: #555;
+    background-color: #212529;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+.footer__texto {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 768px) {
+
+    .header {
+        padding: 40px 15px;
+    }
+
+    .header__titulo {
+        font-size: 2.2rem;
+    }
+
+    .header__texto {
+        font-size: 1rem;
+    }
+
+    .nav {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .inicio {
+        padding: 30px 10px;
+    }
+
+    .inicio__titulo {
+        font-size: 2rem;
+    }
+
+    .beneficios {
+        padding: 35px 10px;
+    }
+
+    .beneficios__titulo {
+        font-size: 2rem;
+    }
+
+    .contacto {
+        padding: 40px 15px;
+    }
 }
