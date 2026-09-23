@@ -1,0 +1,121 @@
+body {
+  background-color: #f5f7fb;
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+}
+
+/* HEADER alineado a la izquierda */
+.header {
+  padding: 30px 0 10px;
+  width: 100%;
+}
+
+.header__titulo {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__texto {
+  font-size: 1.1rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* MENÚ a la izquierda */
+.nav {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px 0 30px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #007bff;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+}
+
+/* Contenedor principal */
+main.container {
+  max-width: 900px;
+}
+
+/* INICIO alineado a la izquierda */
+.inicio {
+  margin-bottom: 60px;
+}
+
+.inicio__titulo {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.inicio__texto {
+  margin-bottom: 25px;
+  font-size: 1.05rem;
+}
+
+.inicio__imagen {
+  max-width: 420px;
+  width: 100%;
+  display: block;
+  margin-top: 20px;
+}
+
+/* BOTÓN */
+.btn {
+  border-radius: 25px;
+  padding: 10px 25px;
+  font-weight: bold;
+}
+
+/* BENEFICIOS */
+.beneficios {
+  margin-bottom: 60px;
+}
+
+.beneficios__titulo {
+  font-size: 2rem;
+  margin-bottom: 35px;
+}
+
+/* TARJETAS */
+.beneficio {
+  padding-right: 20px;
+}
+
+.beneficio__titulo {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.beneficio__texto {
+  line-height: 1.5;
+}
+
+/* CONTACTO centrado */
+.contacto {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.contacto__titulo {
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 25px 0;
+  color: #555;
+}

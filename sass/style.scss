@@ -1,0 +1,267 @@
+// =========================
+// VARIABLES SASS
+// =========================
+
+$color-principal: #007bff;
+$color-secundario: #343a40;
+$color-fondo: #f5f7fb;
+$color-texto: #333;
+$blanco: white;
+
+
+// =========================
+// ESTILOS GENERALES
+// =========================
+
+body {
+
+    background-color: $color-fondo;
+
+    font-family: Arial, sans-serif;
+
+    min-height: 100vh;
+
+    color: $color-texto;
+
+}
+
+
+
+// =========================
+// HEADER - BEM
+// =========================
+
+.header {
+
+    background-color: $color-principal;
+
+    color: $blanco;
+
+    text-align: center;
+
+    padding: 30px;
+
+
+    &__titulo {
+
+        font-size: 40px;
+
+        margin-bottom: 10px;
+
+    }
+
+
+    &__texto {
+
+        font-size: 18px;
+
+    }
+
+}
+
+
+
+// =========================
+// NAVEGACIÓN - BEM
+// =========================
+
+.nav {
+
+    background-color: white;
+
+    text-align: center;
+
+    padding: 15px;
+
+    margin-bottom: 20px;
+
+
+    &__link {
+
+        text-decoration: none;
+
+        color: $color-texto;
+
+        font-weight: bold;
+
+        margin: 0 10px;
+
+
+        &:hover {
+
+            color: $color-principal;
+
+        }
+
+    }
+
+}
+
+
+
+// =========================
+// SECCIÓN INICIO - BEM
+// =========================
+
+.inicio {
+
+    text-align: center;
+
+    margin-bottom: 50px;
+
+    padding-top: 20px;
+
+
+    &__titulo {
+
+        margin-bottom: 15px;
+
+    }
+
+
+    &__texto {
+
+        margin-bottom: 20px;
+
+    }
+
+
+    &__imagen {
+
+        width: 200px;
+
+        height: auto;
+
+        margin-top: 20px;
+
+    }
+
+}
+
+
+
+// =========================
+// BENEFICIOS - BEM
+// =========================
+
+.beneficios {
+
+    margin-top: 30px;
+
+
+    &__titulo {
+
+        text-align: center;
+
+        margin-bottom: 30px;
+
+    }
+
+}
+
+
+
+// =========================
+// TARJETAS DE BENEFICIOS
+// =========================
+
+.beneficio {
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    padding: 20px;
+
+    height: 100%;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+
+
+    &__titulo {
+
+        color: $color-principal;
+
+        font-size: 20px;
+
+        margin-bottom: 15px;
+
+    }
+
+
+
+    &__texto {
+
+        color: $color-texto;
+
+    }
+
+}
+
+
+
+// =========================
+// BOTONES
+// =========================
+
+.btn {
+
+    border-radius: 20px;
+
+}
+
+
+
+// =========================
+// CONTACTO - BEM
+// =========================
+
+.contacto {
+
+    text-align: center;
+
+    margin-top: 50px;
+
+
+    &__titulo {
+
+        margin-bottom: 15px;
+
+    }
+
+
+    &__dato {
+
+        font-size: 16px;
+
+    }
+
+}
+
+
+
+// =========================
+// FOOTER - BEM
+// =========================
+
+.footer {
+
+    background-color: $color-secundario;
+
+    color: $blanco;
+
+    text-align: center;
+
+    padding: 15px;
+
+    margin-top: 50px;
+
+
+    &__texto {
+
+        font-size: 14px;
+
+    }
+
+}
